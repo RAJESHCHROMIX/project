@@ -10,10 +10,10 @@ gulp.task('script',function(){
 });
 
 
-gulp.task('karthi',function(){
+gulp.task('minifyingcss',function(){
 	gulp.src('src/scss/*.css')
 	.pipe(rename({suffix:'.min'}))
 	.pipe(cssmin())
 	.pipe(gulp.dest('build/css'));
 });
-gulp.task('default',['script','karthi']);
+gulp.task('default',['script','minifyingcss']);
