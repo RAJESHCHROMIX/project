@@ -62,4 +62,29 @@ gulp.task('jsfile',function(){
 });
 
 
->>>>>>> add css-scss task to gulp
+var gulp = require('gulp');
+gulp.task('hello', function() {
+ 	 console.log('Hello Zell')
+});
+
+var uglify=require('gulp-uglify');
+var rename=require('gulp-rename');
+gulp.task('jsminify',function(){
+	return gulp.src('src/js/bootstrap.js')
+	.pipe(rename({suffix :'.min'}))
+		.pipe(uglify())
+		.pipe(gulp.dest('build/js'))
+	})
+	gulp.task('default',['jsminify']);
+	
+	
+	
+var cssmin=require('gulp-cssmin');
+var rename=require('gulp-rename');
+gulp.task('cssminify',function(){
+	return gulp.src('src/css/bootstrap.css')
+	.pipe(rename({suffix :'.min'}))
+		.pipe(cssmin())
+		.pipe(gulp.dest('build/css'))
+	})
+	gulp.task('default',['cssminify']);
