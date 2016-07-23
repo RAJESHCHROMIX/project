@@ -10,11 +10,13 @@ var libjs = [
     './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
   ];
   
+   /******SCSS To CSS*****/ 
   gulp.task('sass', function () {
-    return gulp.src('./src/sass/*.scss')
-      .pipe(sass({errLogToConsole: true, outputStyle: 'expanded'}).on('error', sass.logError))
-	  .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('./build/css'));
+    return gulp.src('src/sass/alerts.scss')
+      //.pipe(sass({errLogToConsole: true, outputStyle: 'expanded'}).on('error', sass.logError))
+	  //.pipe(sass().on('error', sass.logError))
+        .pipe(sass({style: 'compressed'}))
+        .pipe(gulp.dest('build/css'));
 });
   
 gulp.task('suri',function() {
