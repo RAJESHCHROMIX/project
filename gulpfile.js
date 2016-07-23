@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-  concat = require('gulp-concat');
+  concat = require('gulp-concat'),
+  sass = require('gulp-sass');
 
   var libjs = [
     './node_modules/jquery/dist/jquery.js',
@@ -12,3 +13,9 @@ var gulp = require('gulp'),
 	  .pipe(gulp.dest('./build/js'));
   });
   
+  gulp.task('sass', function () {
+    return gulp.src('./src/sass/*.scss')
+      .pipe(sass({errLogToConsole: true, outputStyle: 'expanded'}).on('error', sass.logError))
+	  .pipe(sass().on('error', sass.logError))
+      .pipe(gulp.dest('./build/css'));
+  });
