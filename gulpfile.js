@@ -1,6 +1,10 @@
 var gulp = require('gulp'),
   concat = require('gulp-concat'),
-  sass = require('gulp-sass');
+  sass = require('gulp-sass'),
+  uglify = require('gulp-uglify'),
+ rename = require ('gulp-rename'),
+ cssmin = require ('gulp-cssmin');
+
 
   var libjs = [
     './node_modules/jquery/dist/jquery.js',
@@ -19,3 +23,11 @@ var gulp = require('gulp'),
 	  .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('./build/css'));
   });
+  
+ 
+ 
+gulp.task('suri',function() {
+	return gulp.src('src/scss/*.css')
+		.pipe(cssmin())
+   .pipe(gulp.dest ('build/css'));
+});
