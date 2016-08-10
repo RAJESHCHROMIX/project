@@ -1,10 +1,28 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "\"\",",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "code": "^3.0.1",
+    "bootstrap-sass": "^3.3.7",
+    "gulp-watch": "^4.3.9",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "http-server": "^0.9.0",
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1",
+    "gulp-watch": "^4.3.9",
+    "mocha": "^2.5.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build": "gulp build",
+    "start": "http-server ./build",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -15,20 +33,5 @@
   "bugs": {
     "url": "https://github.com/RAJESHCHROMIX/project/issues"
   },
-  "homepage": "https://github.com/RAJESHCHROMIX/project#readme",
-  "dependencies": {
-    "bootstrap-sass": "3.3.4",
-    "jquery": "^3.1.0"
-  },
-  "devDependencies": {
-    "gulp-concat": "^2.6.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^1.5.4",
-    "gulp": "^3.9.1"
-
-  }
+  "homepage": "https://github.com/RAJESHCHROMIX/project#readme"
 }
