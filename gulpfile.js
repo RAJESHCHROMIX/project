@@ -1,9 +1,9 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     watch = require('gulp-watch'),
-    images=require('gulp-images'),
     livereload = require('gulp-livereload');
-	gulp.task('build',['sass','html-copy','image-copy'],
+
+	gulp.task('build',['sass','html-copy','images'],
 	  function(){
 
 	});
@@ -26,11 +26,6 @@ var gulp = require('gulp'),
   gulp.task('image-copy', function () {
           return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build/images'));
-  });
-
- gulp.task('images', function () {
-          return gulp.src('./src/images/*.*')
-            .pipe(gulp.dest('./build'));
   });
 
   gulp.task('watch', function () {
