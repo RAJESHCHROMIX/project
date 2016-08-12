@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     livereload = require('gulp-livereload');
 
-	gulp.task('build',['sass','html-copy','image-copy'],
-  function(){
+	gulp.task('build',['sass','html-copy','images'],
+	  function(){
 
 	});
 
