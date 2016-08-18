@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     watch = require('gulp-watch'),
     livereload = require('gulp-livereload');
-const image = require('gulp-imagemin');	
+const image = require('gulp-imagemin');
 
 	gulp.task('build',['sass','html-copy','images'],
 	  function(){
