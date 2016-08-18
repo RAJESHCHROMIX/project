@@ -2,9 +2,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     watch = require('gulp-watch'),
     livereload = require('gulp-livereload');
-const image = require('gulp-imagemin');
 
-	gulp.task('build',['sass','html-copy','images'],
+	gulp.task('build',['sass','html-copy','image-copy'],
 	  function(){
 
 	});
@@ -23,12 +22,11 @@ const image = require('gulp-imagemin');
           return gulp.src('./src/**/*.html')
             .pipe(gulp.dest('./build'));
   });
-
- gulp.task('images', function () {
-          return gulp.src('./src/images/*')
-		    .pipe(imagemin({progressive:true}))
+  gulp.task('image-copy', function () {
+          return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build/images'));
   });
+
 
   gulp.task('watch', function () {
          gulp.watch('./src/**/*.scss',['sass']);
