@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     watch = require('gulp-watch'),
+    images=require('gulp-images'),
     livereload = require('gulp-livereload');
 
 	gulp.task('build',['sass','html-copy','images'],
