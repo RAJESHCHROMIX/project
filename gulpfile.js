@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     images=require('gulp-images'),
     livereload = require('gulp-livereload');
 
-	gulp.task('build',['sass','html-copy','images'],
+
+	gulp.task('build',['sass','html-copy','image-copy'],
 	  function(){
 
 	});
@@ -24,9 +25,15 @@ var gulp = require('gulp'),
             .pipe(gulp.dest('./build'));
   });
 
+<<<<<<< HEAD
  gulp.task('images', function () {
           return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build'));
+=======
+  gulp.task('image-copy', function () {
+          return gulp.src('./src/images/*.*')
+            .pipe(gulp.dest('./build/images'));
+>>>>>>> 2f76e5a625b595918f1191a998301f23a8acad26
   });
 
   gulp.task('watch', function () {
