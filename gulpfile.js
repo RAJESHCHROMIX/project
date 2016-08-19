@@ -31,5 +31,5 @@ var gulp = require('gulp'),
   gulp.task('watch', function () {
          gulp.watch('./src/**/*.scss',['sass']);
          gulp.watch('./src/**/*.html',['html-copy']);
-         gulp.watch('./src/**/*.*',['images']);
+         gulp.watch('./src/**/*.png',['image-copy']);
   });
