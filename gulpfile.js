@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     watch = require('gulp-watch'),
     livereload = require('gulp-livereload');
-
 	gulp.task('build',['sass','html-copy','image-copy'],
 	  function(){
 
@@ -22,6 +21,7 @@ var gulp = require('gulp'),
           return gulp.src('./src/**/*.html')
             .pipe(gulp.dest('./build'));
   });
+
   gulp.task('image-copy', function () {
           return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build/images'));
