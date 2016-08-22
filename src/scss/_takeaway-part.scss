@@ -1,0 +1,40 @@
+.container {
+  width: 1280px;
+}
+
+.takeaway-part {
+  background-color: #fdf7e2;
+  padding-bottom: 20px;
+  h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+.sub-part {
+  float: left;
+  background-color: #fff;
+  margin-right: 15px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  img:first-child {
+    width: 100%;
+  }
+  h1 {
+    font-size: 14px;
+    color: #338dc8;
+  }
+  p a {
+    font-size: 12px;
+    color: #898888;
+  }
+  span {
+    a {
+      color: #898888;
+      padding-left: 60px;
+    }
+    b {
+      text-decoration: line-through;
+    }
+  }
+}
