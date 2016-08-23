@@ -27,7 +27,7 @@ var gulp = require('gulp'),
           return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build/images'));
   });
-  
+
  gulp.task('images', function () {
           return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build'));
@@ -36,5 +36,5 @@ var gulp = require('gulp'),
   gulp.task('watch', function () {
          gulp.watch('./src/**/*.scss',['sass']);
          gulp.watch('./src/**/*.html',['html-copy']);
-         gulp.watch('./src/**/*.',['images']);
+         gulp.watch('./src/**/*.*',['images']);
   });
