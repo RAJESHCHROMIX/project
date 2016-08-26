@@ -1,0 +1,27 @@
+.top-header {
+  background-color: #ffcb05;
+}
+.menu {
+  text-align: right;
+  margin: 0px;
+  li {
+          padding: 10px 0px;
+    a {
+      font-family: 'Roboto-Regular';
+      padding: 10px 10px;
+      color: black;
+      text-decoration: none;
+      &:hover {
+        background-color: #C63;
+        color: white;
+      }
+    }
+    font-weight: 600;
+    font-size: 12px;
+    display: inline-block;
+    i {
+      background-color: #C93;
+      padding: 11px;
+    }
+  }
+}
