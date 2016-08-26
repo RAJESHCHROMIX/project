@@ -25,19 +25,16 @@ var gulp = require('gulp'),
             .pipe(gulp.dest('./build'));
   });
 
-<<<<<<< HEAD
   gulp.task('images', function() {
        return gulp.src('src/images/*')
        .pipe(imagemin({ progressive: true }))
        .pipe(gulp.dest('build/images'));
    });
 
-=======
   gulp.task('image-copy', function () {
           return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build/images'));
   });
->>>>>>> 2f76e5a625b595918f1191a998301f23a8acad26
 
   gulp.task('watch', function () {
          gulp.watch('./src/**/*.scss',['sass']);
