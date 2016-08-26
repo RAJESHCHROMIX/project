@@ -1,11 +1,10 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     watch = require('gulp-watch'),
-    images=require('gulp-images'),
     livereload = require('gulp-livereload');
-	gulp.task('build',['sass','html-copy','image-copy'],
 
-	  function(){
+	gulp.task('build',['sass','html-copy','image-copy'],
+  function(){
 
 	});
 
@@ -32,4 +31,5 @@ var gulp = require('gulp'),
          gulp.watch('./src/**/*.scss',['sass']);
          gulp.watch('./src/**/*.html',['html-copy']);
          gulp.watch('./src/**/*.png',['image-copy']);
+
   });
