@@ -1,4 +1,16 @@
-//.navbar {
-//    border-radius: none;
-//     height: 40px;  
-//}
+.logo{
+    float: left;
+}
+.nav {
+text-align:right;
+    padding-top: 20px;
+}
+.navbar-default .navbar-collapse{
+  float: right;
+}
+.navbar-right{
+  font-size: 12px;
+}
+.navbar-default .navbar-nav > li > a{
+  color:#9d8a45;
+}
