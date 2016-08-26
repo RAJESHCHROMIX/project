@@ -25,12 +25,6 @@ var gulp = require('gulp'),
             .pipe(gulp.dest('./build'));
   });
 
-  gulp.task('images', function() {
-       return gulp.src('src/images/*')
-       .pipe(imagemin({ progressive: true }))
-       .pipe(gulp.dest('build/images'));
-   });
-
   gulp.task('image-copy', function () {
           return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build/images'));
@@ -39,6 +33,6 @@ var gulp = require('gulp'),
   gulp.task('watch', function () {
          gulp.watch('./src/**/*.scss',['sass']);
          gulp.watch('./src/**/*.html',['html-copy']);
-         gulp.watch('./src/**/*.png',['images']);
+         gulp.watch('./src/**/*.png',['image-copy']);
 
   });
