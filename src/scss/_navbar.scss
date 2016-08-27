@@ -1,4 +1,20 @@
-//.navbar {
-//    border-radius: none;
-//     height: 40px;  
-//}
+.navbar-default{
+    .logo{
+        float: left;
+    }
+    .navbar-collapse{
+        float: right;
+        font-size: 16px;
+        & li:nth-child(4){
+            border-right: 1px solid #846d17;
+        }
+    }
+}
+.navbar-default{
+    .navbar-right{
+        font-size: 12px;
+         & li:nth-child(4){
+            border: none;
+        }
+    }
+}
