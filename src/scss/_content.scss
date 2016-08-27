@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic);
+/* CSS Document */
+  $paragraph-color: #1e4965;
+
+
+
+.dhakshinservices {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.CateringServices {
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  left: 13px;
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #eb470a;
+    font-size: 33px;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    font-size: 16px;
+    color:  $paragraph-color;
+    line-height: 25px;
+  }
+  .btn-primary {
+
+font-family: 'Roboto', sans-serif;
+
+    font-size: 14px;
+    background-color: #0070ba;
+    position: relative;
+    top: 30px;
+  }
+}
+
+.MonthlyCards {
+  $paragraph-color: #363636;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  right: 0px;
+}
+
+.get {
+  font-family: 'Roboto', sans-serif;
+  color: #1e4965;
+}
+
+.MonthlyCards {
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #eb470a;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #1e4965;
+  }
+  h5 {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 0px;
+    color: #1e4965;
+  }
+  .btn-primary {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0070ba;
+    margin: 15px 0px;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    right: 230px;
+    top: 5px;
+    color: $paragraph-color;
+  }
+}
+
+.app {
+  $paragraph-color:#1c242a;
+  position: absolute;
+  text-align: center;
+  right: 5px;
+  top: 0px;
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+  }
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    color: #1c242a;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 0px;
+    color:$paragraph-color;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .fa-android {
+    color: #23ab0d;
+  }
+
+  .fa-apple {
+    color: #168ecc;
+  }
+
+  .fa-windows {
+    color: #00bdf6;
+  }
+}
+
+.icons {
+  list-style-type: none;
+  font-size: 36px;
+  padding: 0px;
+  li {
+    display: inline-block;
+  }
+}

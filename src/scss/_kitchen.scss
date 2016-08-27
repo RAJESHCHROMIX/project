@@ -1,0 +1,48 @@
+	$kitchen-part-color:#ffffff;
+	$kitchen-part-bgcolor: rgba(218, 70, 14, 0.9);
+	$cooking-part-bgcolor: rgba(37, 128, 174, 0.9);
+
+.kitchen {
+	position: relative;
+	cursor: pointer;
+	img {
+		width: 100%;
+	}
+}
+.kitchen-part {
+	color: $kitchen-part-color;
+	background-color: $kitchen-part-bgcolor;
+	position: absolute;
+	top: 35px;
+	margin: 0px 15px;
+	padding: 20px;
+	h1 {
+		font-size: 25px;
+		margin-top: 0px;
+	}
+	p {
+		font-size: 14px;
+	}
+}
+
+
+.cooking-part {
+	color:  $kitchen-part-color;
+	background-color: $cooking-part-bgcolor;
+	position: absolute;
+	top: 35px;
+	margin: 0px 15px;
+	padding: 20px;
+	h1 {
+		font-size: 25px;
+		margin-top: 0px;
+	}
+	p {
+		font-size: 14px;
+	}
+}
+.btn-info {
+	background-color: inherit;
+	color: #f7ec4a;
+	border-color: #f7ec4a;
+}
