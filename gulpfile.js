@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     livereload = require('gulp-livereload');
 
-	gulp.task('build',['sass','html-copy','images'],
+	gulp.task('build',['sass','html-copy','image-copy'],
+
 	  function(){
 
 	});
@@ -17,20 +18,18 @@ var gulp = require('gulp'),
         .pipe(gulp.dest('./build/css'));
     });
 
-
   gulp.task('html-copy', function () {
           return gulp.src('./src/**/*.html')
             .pipe(gulp.dest('./build'));
   });
 
- gulp.task('images', function () {
-          return gulp.src('./src/images/*.png')
+  gulp.task('image-copy', function () {
+          return gulp.src('./src/images/*.*')
             .pipe(gulp.dest('./build/images'));
   });
 
   gulp.task('watch', function () {
          gulp.watch('./src/**/*.scss',['sass']);
          gulp.watch('./src/**/*.html',['html-copy']);
-         gulp.watch('./src/**/*.png',['images']);
-
-  });
+         gulp.watch('./src/**/*.*',['images']);
+});

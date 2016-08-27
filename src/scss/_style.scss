@@ -1,0 +1,37 @@
+body {
+	margin: 0px;
+}
+.language {
+	li {
+		display: inline-block;
+		padding: 9px;
+		font-family: 'opensans-Regular';
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+			color: #ffffff;
+		}
+		&:hover {
+			background-color: #454545;
+		}
+	}
+	float: right;
+	font-size: 18px;
+	background-color: #ff6500;
+	padding-left: 0px;
+	margin-top: 16px;
+	margin-bottom: inherit;
+	color: #ffecdf;
+}
+.carousel-caption {
+	top: 123px;
+	left: 45%;
+	h2 {
+		font-size: 36px;
+		font-family: 'opensans-light';
+	}
+}
+.carousel-indicators {
+	display: none;
+}
