@@ -3,12 +3,16 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     livereload = require('gulp-livereload');
 
-	gulp.task('build',['sass','html-copy','image-copy'],
+	gulp.task('build',['sass','html-copy','image-copy','boolean'],
 
 	  function(){
 
 	});
 
+    gulp.task('boolean', function () {
+          return gulp.src('./src/prime.html')
+            .pipe(gulp.dest('./build'));
+  });
 	gulp.task('sass', function () {
       return gulp.src('./src/scss/**/*.scss')
         .pipe(sass({includePaths: [

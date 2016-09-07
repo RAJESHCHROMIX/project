@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Check the number prime or not</title>
+
+</head>
+
+<body>
+<div Id="demo"></div>
+
+<script>
+function isPrime(num) {
+    if(num < 2) return false;
+    for (var i = 2; i < num; i++) {
+        if(num%i==0)
+            return false;
+    }
+    return true;
+}
+for(var i = 0; i < 100; i++){
+    if(isPrime(i)) console.log(i);
+}
+
+document.getElementById("demo").innerHTML=isPrime(97);  
+</script>
+
+</body>
+</html>
