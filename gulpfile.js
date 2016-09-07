@@ -3,16 +3,16 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     livereload = require('gulp-livereload');
 
-	gulp.task('build',['sass','html-copy','image-copy','boolean'],
+	gulp.task('build',['sass','html-copy','image-copy','boolean','prime'],
 
 	  function(){
 
 	});
-
-    gulp.task('boolean', function () {
-          return gulp.src('./src/prime.html')
-            .pipe(gulp.dest('./build'));
-  });
+	gulp.task('boolean', function () {
+    gulp.task('prime', function () {
+    return gulp.src('./src/prime.html')
+	.pipe(gulp.dest('./build'));
+  	});
 	gulp.task('sass', function () {
       return gulp.src('./src/scss/**/*.scss')
         .pipe(sass({includePaths: [
@@ -36,4 +36,6 @@ var gulp = require('gulp'),
          gulp.watch('./src/**/*.scss',['sass']);
          gulp.watch('./src/**/*.html',['html-copy']);
          gulp.watch('./src/**/*.*',['images']);
+		  gulp.watch('./src/',['prime']);
+		  gulp.watch('./src/',['boolean']);
 });

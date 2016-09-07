@@ -3,7 +3,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Check the number prime or not</title>
-
 </head>
 
 <body>
@@ -25,5 +24,36 @@ for(var i = 0; i < 100; i++){
 document.getElementById("demo").innerHTML=isPrime(97);  
 </script>
 
+
+<title>prime or not</title>
+</head>
+<body>
+<p Id="demo"></p>
+<script>
+function test_prime(n)  
+{  
+  
+  if (n===1)  
+  {  
+    return false;  
+  }  
+  else if(n === 2)  
+  {  
+    return true;  
+  }else  
+  {  
+    for(var x = 2; x < n; x++)  
+    {  
+      if(n % x === 0)  
+      {  
+        return false;  
+      }  
+    }  
+    return true;    
+  }  
+}  
+  
+document.getElementById("demo").innerHTML=test_prime();  
+</script>
 </body>
 </html>
