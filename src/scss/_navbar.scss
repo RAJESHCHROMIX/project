@@ -1,16 +1,21 @@
-.logo{
-    float: left;
+.navbar-default{
+    .logo{
+        float: left;
+    }
+    .navbar-collapse{
+        float: right;
+        font-size: 16px;
+        & li:nth-child(4){
+            border-right: 1px solid #846d17;
+        }
+    }
 }
-.nav {
-text-align:right;
-    padding-top: 20px;
+.navbar-default{
+    .navbar-right{
+        font-size: 12px;
+         & li:nth-child(4){
+            border: none;
+        }
+    }
 }
-.navbar-default .navbar-collapse{
-  float: right;
-}
-.navbar-right{
-  font-size: 12px;
-}
-.navbar-default .navbar-nav > li > a{
-  color:#9d8a45;
-}
+

@@ -1,0 +1,36 @@
+.work-area {
+  background-color: #fdf7e2;
+  padding: 40px 0px;
+}
+
+.veg {
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.veg-part {
+  position: absolute;
+  top: 16px;
+  left: 217px;
+  img {
+    width: inherit;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.74);
+  }
+}
+
+.veg-txt {
+  position: absolute;
+  bottom: 45px;
+  color: #fff;
+  left: 64px;
+}
+
+.non-veg {
+  position: absolute;
+  bottom: 45px;
+  color: #fff;
+  left: 54px;
+}
